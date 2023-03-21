@@ -1,0 +1,139 @@
+
+
+#header  {
+    display: flex;
+    align-items: baseline ;
+    width:100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    padding: 0 10px 
+}
+
+#header span {
+    flex-grow: 1;
+    color: red;
+}
+
+#header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+
+#header nav ul li a {
+    word-spacing: 4px;
+    margin: 0 4px;
+    color: white;
+}
+
+#header nav ul li a:visited {
+    word-spacing: 4px;
+    margin: 0 4px;
+    color: white;
+}
+
+#header nav ul li a:active {
+    word-spacing: 4px;
+    margin: 0 4px;
+    color: red;
+}
+
+#header nav ul li a:hover {
+    word-spacing: 4px;
+    margin: 0 4px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#about {
+    background-image: url("./images/pizzeria-about.jpg");
+    background-position: 50% 50%;
+    height: 400px;
+    background-size: cover ;
+    max-width: 1440px;
+    margin: 60px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#about .headings {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about .headings h1 {
+    font-size: 45px;
+}
+
+#about .headings h2 {
+    font-size: 30px;
+}
+
+#featured {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 10px;
+    background: linear-gradient(45deg, black, darkred);
+}
+
+#featured button {
+    height: 25px;
+}
+
+#featured .pizza {
+    width: 250px;
+    height:  250px;
+    border: 1px solid wheat;
+}
+
+#featured  figcaption {
+    text-align: center;
+    color: yellow;
+}
+
+#cheese, #canadian {
+    display: none;
+}
+
+#customPizza {
+    text-align: center;
+    background-color: black;
+    color: red ;
+    max-width: 1440px;
+    margin: 10px auto;
+}
+
+#toppings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: yellow;
+}
+#toppings label {
+    color: gray;
+}
+
+#base, #moreInfo {
+    margin: 20px;
+}
+
+#base, #moreInfo, #crust {
+    color: gray;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: red;
+}

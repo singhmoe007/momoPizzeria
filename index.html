@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoMo Pizzeria</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <span>MoMo Pizzeria</span>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="headings">
+            <h1>MoMo Pizzeria</h1>
+            <h2>Home of canada's best pizza</h2>
+        </div>
+    </section>
+
+    <section id="featured">
+
+        <button id="previous">Prev</button>
+
+        <fig id="cheese" >
+            <img class="pizza" src="./images/cheese.jpg">
+            <figcaption>Cheese</figcaption>
+        </fig>
+
+        <fig id="momoTandoori" >
+            <img class="pizza" src="./images/tandoori.jpg">
+            <figcaption>MoMo Tandoori Pizza</figcaption>
+        </fig>
+
+        <fig id="canadian"  >
+            <img class="pizza" src="./images/canadian.jpg">
+            <figcaption>Canadian</figcaption>
+        </fig>
+
+        <button id="next">Next</button>
+
+    </section>
+
+    <section id="customPizza">
+        <h2>Order a Custom Pizza</h2>
+        <form action="#" method="post">
+
+        <div id="toppings">
+            <div>
+                <h2>Veggie Toppings</h2>
+                <label for="Onion">Onion</label>
+                <input type="checkbox" id="Onion" name="topping" value="Onion">
+
+                <label for="pepper">Green-Pepper</label>
+                <input type="checkbox" id="pepper" name="topping" value="pepper">
+
+                <label for="Mushroom">Mushroom</label>
+                <input type="checkbox" id="Mushroom" name="topping" value="Mushroom">
+
+                <label for="Pineapple">Pineapple</label>
+                <input type="checkbox" id="Pineapple" name="topping" value="Pineapple">
+            </div>
+
+            <div>
+                <h2>Meat Toppings</h2>
+
+                <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" id="Pepperoni" name="topping" value="Pepperoni">
+
+                <label for="Bacon">Bacon</label>
+                <input type="checkbox" id="Bacon" name="topping" value="Bacon">
+
+                <label for="Beef">Ground-Beef</label>
+                <input type="checkbox" id="Beef" name="topping" value="Beef">
+
+                <label for="Chicken">Chicken</label>
+                <input type="checkbox" id="Chicken" name="topping" value="Chicken">
+            </div>
+        </div>
+
+        <div id="crust">
+            <h3>Select Crust Type</h3>
+            <label for="thin">Thin</label>
+            <input type="radio" id="thin" name="crust" value="Thin">
+            <label for="Regular">Regular</label>
+            <input type="radio" id="Regular" name="crust" value="Regular">
+            <label for="thick">Thick</label>
+            <input type="radio" name="crust" value="thick" id="thick">
+        </div>
+
+        <div id="base">
+            <label for="sauce">Base Sauce</label>
+            <input id="sauce" type="text" name="sauce" list="sauces">
+            <datalist id="sauces">
+                <option value="BBQ"></option>
+                <option value="Regular"></option>
+                <option value="Garlic"></option>
+                <option value="Pesto"></option>
+                <option value="Honey Garlic"></option>
+            </datalist>
+        </div>
+
+        <div id="moreInfo">
+            <textarea placeholder="Special Instructions" name="additional" rows="5" cols="25"></textarea>
+        </div>
+
+        <div><input type="submit" value="Add to cart"></div>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Made By SlowMoTron with 🤍 </h2>
+    </footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
